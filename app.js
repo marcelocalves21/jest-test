@@ -17,17 +17,18 @@ let oneEurois = {
 
 const fromDollarToYen = (dollar) => {
     let yen = ((oneEurois.JPY * dollar) / oneEurois.USD).toFixed(2)
-    return yen
+    return Number(yen)
 }
 
 const fromEuroToDollar = (euro) => {
     let dollar = ((euro * oneEurois.USD)).toFixed(2)
-    return dollar
+    return Number(dollar)
 }
 
 const fromYenToPound = (yen) => {
     let pound = ((oneEurois.GBP * yen) / oneEurois.JPY).toFixed(2)
-    return pound
+    return Number(pound)
 }
+
 
 module.exports = {sum, fromYenToPound, fromEuroToDollar, fromDollarToYen };

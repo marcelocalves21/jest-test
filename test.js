@@ -21,16 +21,16 @@ test("One euro should be 1.206 dollars", function(){
 
 test("One yen should be 0.006 pound", function(){
     // use the function like its suppoed to be used
-    const yen = fromYenToPound(300)
+    const pound = fromYenToPound(300)
     
     // this is the comparison for the unit test
-     expect(yen).toBe(1.88); //1 yen is 0.006 pounds, then 300 yen should be = (300 * 0.006)
+     expect(pound).toBe(1.88); //1 yen is 0.006 pounds, then 300 yen should be = (300 * 0.006)
 })
 
 test("One dollar should be 106.58 pound", function(){
     // use the function like its suppoed to be used
-    const dollar = fromDollarToYen(50)
+    const yen = fromDollarToYen(50)
     
     // this is the comparison for the unit test
-     expect(dollar).toBe(5329.17); //1 dollar is 106.58 yen, then 50 dollars should be = (50 * 106.58)
+     expect(yen).toBe(5329.17); //1 dollar is 106.58 yen, then 50 dollars should be = (50 * 106.58)
 })
